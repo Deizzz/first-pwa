@@ -1,6 +1,6 @@
 var installPromptEvent,
 	count=0,
-	btnInstall=document.querySelector("#install"),
+	btnInstall=document.querySelector("#install")
 	// easter_egg=new Konami(function(){
 	// 	window.location.href="https://stackoverflow.com/admin.php"
 	// });
