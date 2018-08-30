@@ -1,16 +1,16 @@
 const version = "0.0.03b";
 const cacheName = `nothing-${version}`;
 self.addEventListener('install', e => {
-    e.waitUntil(
-        caches.open(cacheName).then(cache => {
-            return cache.addAll([
-                `/`,
-                `/index.html`,
-                '/scripts/main.js',
-                `/scripts/pwacompat.min.js`
-            ]).then(() => self.skipWaiting());
-        })
-    );
+    // e.waitUntil(
+    //     caches.open(cacheName).then(cache => {
+    //         return cache.addAll([
+    //             `/`,
+    //             `/index.html`,
+    //             '/scripts/main.js',
+    //             `/scripts/pwacompat.min.js`
+    //         ]).then(() => self.skipWaiting());
+    //     })
+    // );
 });
 
 self.addEventListener('activate', event => {
