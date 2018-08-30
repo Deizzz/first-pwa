@@ -20,6 +20,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"> 
 		<link rel="manifest" href="manifest.json"/> 
+		<link rel="stylesheet" href="style.css"/>
 		<script src="scripts/pwacompat.min.js"></script> 
 		<style>
 
@@ -41,9 +42,10 @@
 
 		</style>
 	</head>
-	<body> Hello, Диман
-		<div id="install" disabled>Install</div>
-		<div class="tooltip">Have you tried some konami?</div>
+	<body> 
+		
+		<button class="btn btn-push blue">PUSH ME</button>
+
 		<script>
 			if ('serviceWorker' in navigator){
 				navigator.serviceWorker.register('sw-first.js').then(function (registration){}); 
